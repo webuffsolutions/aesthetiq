@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-header" style="border-bottom: 1px solid #9C908A;">
         <div class="container">
             <h1 class="pb-2 ml-md-0 ml-sm-3 ml-0 mr-3">
-                <a href="#" class="navbar-brand">
+                <a href="<?php echo site_url(); ?>" class="navbar-brand">
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo/brown-logo.png'; ?>" id="no-lazy-load" width="200" />
                 </a>
             </h1>
