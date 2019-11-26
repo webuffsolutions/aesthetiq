@@ -1,0 +1,18 @@
+.hover-link {
+    display: inline-block !important;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.hover-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+.hover-link:hover::after {
+    width: 100%;
+}

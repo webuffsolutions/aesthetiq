@@ -1,0 +1,72 @@
+Home
+- Banner (✔)
+
+- Signature Treatments
+  -- treatment thumbnail
+  -- redirecting button
+  -- description
+
+- Video Presentation (✔)
+  -- video player (✔)
+  -- redirecting button (✔)
+
+- About Us
+  -- about us description
+  -- 3 photos (max)
+
+- Testimonials
+  -- message
+  -- client / partner's name
+  -- date
+  -- rating
+  -- client / partner's avatar
+
+- Redirect Shortcuts (✔)
+  -- shortcut description (✔)
+  -- redirecting button (✔)
+  -- background photo (✔)
+
+Our Services
+- Service Categories
+  -- category_name
+  -- category_thumbnail
+  -- category_description
+
+- Services 
+  -- service_name
+  -- service_photos (max: 4)
+  -- service_description
+  -- service_category
+
+Our Products
+- Product Categories
+  -- category_name
+  -- category_thumbnail
+  -- category_description
+
+- Products
+  -- product_name
+  -- product_photos (max: 4)
+  -- product_description
+  -- product_category
+
+About Us
+- Thumbnail (required / elementor) (✔)
+- Description (required / elementor) (✔)
+- Signature Service / Products (✔)
+
+- Global Partners (✔)
+  -- logo (✔)
+  -- partner_name (✔)
+
+- Loyalty Program Partners (✔)
+  -- logo (✔)
+  -- loyalty_partner_name (✔)
+
+Locations
+- Locations (✔)
+  -- location thumbnail (✔)
+  -- description w/ google map link (✔)
+
+Book an Appointment (✔)
+- Booking Form  (✔)

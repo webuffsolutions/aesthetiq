@@ -1,0 +1,118 @@
+$gold-brown: #c57350;
+$gray: #eeeeee;
+$dark-gray: #A9A9A9; 
+
+.required:after {
+    color: red;
+    content: " *";
+}
+
+.text-aq-brown {
+    color: #5e4b45;
+}
+
+.text-gold-brown {
+    color: $gold-brown;
+}
+
+.text-gray {
+    color: $dark-gray !important;
+}
+
+.btn-outline-aq-brown {
+    color: #5e4b45;
+    border-color: #5e4b45;
+    border: 3px solid #604d47;
+}
+
+.btn-outline-aq-brown:hover {
+    color: #fff;
+    background-color: #5e4b45;
+    border-color: #5e4b45;
+}
+
+a.action:hover {
+    color: $gold-brown !important;
+}
+
+.bg-header {
+    background-color: #5e4b45 !important;
+}
+
+.bg-pink {
+    background-color: #c28269 !important;
+}
+
+.bg-orange {
+    background-color: #f0954e !important;
+    color: #fff !important;
+}
+
+.bg-gray {
+    background-color: $gray !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-text-sm {
+    font-size: 80% !important;
+    font-weight: 400 !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.border-bottom-green {
+    border-bottom: 4px solid #329894 !important;
+}
+
+.border-bottom-green-thin {
+    border-bottom: 2px solid #329894 !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.quarter-border-bottom:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 0 0 0;
+    /* This will center the border. */
+    width: 70%;
+    /* Change this to whatever width you want. */
+    padding-top: 20px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #ffffff;
+    /* This creates the border. Replace black with whatever color you want. */
+}
+
+// back to top
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+// remove anchor default styles for non-link list items
+.no-link a {
+    color: #fff;
+    text-decoration: none !important;
+    cursor: auto;
+}
+
+.scale-down {
+    object-fit:scale-down !important;
+}
+
+.fixed-width-btn {
+    min-width: 300px;
+    max-width: 300px;
+}

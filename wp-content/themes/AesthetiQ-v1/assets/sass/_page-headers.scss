@@ -1,0 +1,44 @@
+h1.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c57350;
+}
+
+h1.header:before,
+h1.header:after {
+    content: "";
+    border-top: 2px solid #c57350;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    max-width: 150px;
+}
+
+h1.header:after {
+    margin: 0 0 0 20px;
+}
+
+// white header
+h1.header.white-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+h1.header.white-header:before,
+h1.header.white-header:after {
+    content: "";
+    border-top: 2px solid #fff;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    max-width: 150px;
+}
+
+h1.header.white-header:after {
+    margin: 0 0 0 20px;
+}

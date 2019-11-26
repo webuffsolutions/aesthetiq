@@ -1,0 +1,83 @@
+// Removes white gap between slides
+// Top Slider Carousel
+.carousel {
+    margin-top: 18vh !important;
+    background: #444;
+}
+
+// Forces image to be 100% width and not max width of 100%
+.carousel-item .img-fluid {
+    width: 100%;
+}
+
+// anchors are inline so you need ot make them block to go full width
+.carousel-item a {
+    display: block;
+    width: 100%;
+}
+// End Top Slider Carousel
+
+// Testimonials Slider Carousel
+.carousel1 {
+    margin: 0 auto;
+    padding: 0 70px;
+}
+.carousel1 .item {
+    color: #999;
+    overflow: hidden;
+    min-height: 120px;
+    font-size: 13px;
+}
+.carousel1 .media {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.carousel1 .media img {
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 50%;
+}
+.carousel1 .testimonial-wrapper {
+    padding: 0 10px;
+}
+.carousel1 .testimonial {
+    color: #808080;
+    position: relative;
+    padding: 15px;
+    background: #f1f1f1;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.carousel1 .testimonial::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: #f1f1f1;
+    border: 1px solid #efefef;
+    border-width: 0 0 1px 1px;
+    position: absolute;
+    bottom: -8px;
+    left: 46px;
+    transform: rotateZ(-46deg);
+}
+.carousel1 .star-rating li {
+    padding: 0 2px;
+}
+.carousel1 .star-rating i {
+    font-size: 16px;
+    color: #1da4a0;
+}
+.carousel1 .overview {
+    padding: 3px 0 0 15px;
+}
+.carousel1 .overview .details {
+    padding: 5px 0 8px;
+}
+.carousel1 .overview b {
+    text-transform: uppercase;
+    color: #c57350;
+}
+// End Testimonials Slider Carousel

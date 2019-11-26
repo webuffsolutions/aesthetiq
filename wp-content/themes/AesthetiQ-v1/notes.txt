@@ -1,0 +1,54 @@
+A. Frontend
+
+- Utilities
+  -- font integration (✔)
+  -- header (✔)
+  -- footer (✔)
+
+- Version Control
+  -- upload to git repo
+
+- Pages
+  -- Home
+     --- Image Slider (✔)
+     --- Our Signature Treatments (✔)
+     --- Description below "our signature treatments" (✔)
+     --- "Watch More" div and content (✔)
+     --- "About Us" div and content (✔) (needs to optimize image)
+     --- Testimonials (✔)
+     --- "Check all our Services (banner) (✔)
+     --- "Experience AesthetiQ (banner) (✔)
+
+  -- Our Services
+     --- left navigation
+     --- right content 
+     --- other services
+     --- "Experience AesthetiQ (banner) (✔)
+
+  -- Our Products
+
+  -- About Us
+     --- Content (✔)
+     --- Global Partners (✔)
+     --- Loyalty Program Partners (✔)
+     --- "Check all our Services (banner) (✔)
+     --- "Experience AesthetiQ (banner) (✔)
+
+  -- Locations
+     --- List of locations  (✔)
+     --- "Check all our Services (banner) (✔)
+     --- "Experience AesthetiQ (banner) (✔)
+
+  -- Book Your Appointment
+     --- Booking Form (✔)
+     --- "Check all our Services (banner) (✔)
+     --- "Experience AesthetiQ (banner) (✔)
+
+________________________________________________
+To learn:
+
+- dynamic pages
+- dynamic page template
+- shortcodes
+- dynamic navigation links (✔)
+- dynamic footer links (✔)

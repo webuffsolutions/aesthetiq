@@ -1,0 +1,7 @@
+.banner-bg1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        var(--image-url) 50% 50%;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    color: white;
+}
