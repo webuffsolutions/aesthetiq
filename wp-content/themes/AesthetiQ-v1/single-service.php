@@ -67,14 +67,12 @@
 
     <div class="container">
         <div class="row px-md-5 px-0">
-            <div class="col-md-4 pb-4 sticky">
+            <div class="col-md-4 pb-4 pr-md-5 sticky">
                 <?php get_template_part('template-parts/our-services/left-navigation'); ?>
             </div>
 
-            <div class="col-md-8">
-                
+            <div class="col-md-8 pl-md-5">
                 <div id="services-content"></div>
-
                 <div id="single-service-content">
                     <div class="card border-0 mb-5">
                         <div class="row">
@@ -88,19 +86,19 @@
 
                                     <?php if(get_field('other_image_1')) { ?>
                                     <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="80" width="80" />
+                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="77" width="77" />
                                     </a>
                                     <?php } ?>
                                     
                                     <?php if(get_field('other_image_2')) { ?>
                                     <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="80" width="80" />
+                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="77" width="77" />
                                     </a>
                                     <?php } ?>
      
                                     <?php if(get_field('other_image_3')) { ?>
                                     <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="80" width="80" />
+                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="77" width="77" />
                                     </a>
                                     <?php } ?>
                                 </div>
@@ -108,9 +106,9 @@
 
                             <div class="col-12 col-md-7" style="min-height: 200px;">
                                 <span class="card-block">
-                                    <h2 class="card-title text-gold-brown font-weight-bold pt-md-0 pt-4">
+                                    <h1 class="card-title text-gold-brown font-weight-bold pt-md-0 pt-4">
                                         <?php the_title(); ?>
-                                    </h2>
+                                    </h1>
                                     <p style="color: #A9A9A9;"><?php echo $typesz; ?></p>
                                     <p><?php the_content(); ?></p>
                                 </span>
@@ -135,7 +133,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row no-gutters">
                                         
                         <?php 
                         
@@ -161,11 +159,11 @@
                                 
                         ?>
 
-                        <div class="col-md-4 col-6 px-2">
+                        <div class="col-md-4 col-6 pr-1">
                             <figure class="figure">
                                 <a href="<?php the_permalink(); ?>" class="text-decoration-none">
                                     <img src="<?php echo $thumbnailUrl; ?>" class="figure-img img-fluid mb-0"/>
-                                    <figcaption class="figure-caption bg-pink text-white px-2 pt-1">
+                                    <figcaption class="figure-caption bg-pink text-white px-2 pb-1 pt-2">
                                         <?php the_title(); ?>
                                     </figcaption>
                                 </a>

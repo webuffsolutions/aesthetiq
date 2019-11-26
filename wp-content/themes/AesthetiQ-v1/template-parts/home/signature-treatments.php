@@ -22,7 +22,7 @@
 
 <section id="our-signature-treatments" class="py-5">
     <h1 class="header p-5 mb-5">Our Signature Treatments</h1>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
 
             <?php 
@@ -51,8 +51,8 @@
 </section>
 
 <section id="fall-for-the-feel-section">
-    <div class="container">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row px-md-5">
             <div class="w-100">
                 <?php the_content(); ?>
             </div>

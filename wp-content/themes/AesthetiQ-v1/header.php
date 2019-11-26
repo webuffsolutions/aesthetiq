@@ -9,8 +9,8 @@
 <body <?php body_class(); ?>>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-header" style="border-bottom: 1px solid #9C908A;">
-        <div class="container">
-            <h1 class="pb-2 ml-md-0 ml-sm-3 ml-0 mr-3">
+        <div class="container-fluid">
+            <h1 class="pb-2 ml-md-0 ml-sm-3 ml-0 mr-3 pl-md-5">
                 <a href="<?php echo site_url(); ?>" class="navbar-brand">
                     <img src="<?php echo get_template_directory_uri() . '/assets/images/logo/brown-logo.png'; ?>" id="no-lazy-load" width="200" />
                 </a>
@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse ml-lg-2 ml-0" id="navbarCollapse">
                 <div class="d-flex flex-column w-100 align-items-lg-end align-items-start">
-                    <ul class="navbar-nav flex-row mb-md-1 mt-md-0 mb-3 mt-2 nav-text-sm order-lg-1 order-2">
+                    <ul class="navbar-nav flex-row pt-3 nav-text-sm order-lg-1 order-2">
                         <li class="nav-item px-2 px-lg-0">
                             <a class="nav-link py-0 pr-0" href="https://www.facebook.com/AesthetiQph" target="_blank">
                                 <i class="fab fa-facebook-square"></i>

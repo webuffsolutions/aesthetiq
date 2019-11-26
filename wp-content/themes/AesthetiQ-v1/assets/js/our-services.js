@@ -208,7 +208,7 @@ function displayServiceCategoryItems(serviceSlug) {
                                                 '</div>' +
                                                 '<div class="col-12 col-md-7 bg-gray" style="min-height: 200px;">' +
                                                     '<span class="card-block">' +
-                                                        `<p class="card-title text-white bg-pink px-3 pt-2">${res.services[x].service_name}</p>` +
+                                                        `<h5 class="card-title text-white bg-pink pl-3 pt-2 pb-1">${res.services[x].service_name}</h5>` +
                                                         // `<p class="card-text px-3">Our Essential Treatments</p>` +
                                                         `<p class="card-text px-3">${res.services[x].excerpt}</p>` +
                                                         `<span class="mb-2" style="display: inline; position: absolute; bottom: 0;">` +
