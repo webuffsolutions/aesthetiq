@@ -23,7 +23,7 @@
                     }
                 } else if ($videoType == 'URL') {
                     if ($youtubeUrl) {
-                        echo '<iframe width="500" height="300" src="' . $youtubeUrl . '" style="border: 0; max-width: 100%;"></iframe>';
+                        echo '<iframe width="500" height="250" src="' . $youtubeUrl . '" style="border: 0; max-width: 100%;"></iframe>';
                     } else {
                         echo '<video controls></video>';
                     }
