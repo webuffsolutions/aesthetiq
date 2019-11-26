@@ -109,7 +109,7 @@ function displayAllServices() {
                     '<div class="card-body px-0">' +
                     `<h2 class="text-aq-brown font-weight-bold text-uppercase">${arr[index].name}</h2>` +
                     `<p>${arr[index].description}</p>` +
-                    '<div class="row pt-1 pb-4">';
+                    '<div class="row no-gutters pt-1 pb-4">';
 
                 if (arr[index].services) {
                     for (var x = 0; x < arr[index].services.length; x++) {
@@ -168,7 +168,7 @@ function displayServiceCategoryItems(serviceSlug) {
                     '<div class="card-body px-0">' +
                         `<h2 class="text-aq-brown font-weight-bold text-uppercase">${res.data.name}</h2>` +
                         `<p>${res.data.description}</p>` +
-                            '<div class="row pt-1 pb-4">';
+                            '<div class="row no-gutters pt-1 pb-4">';
 
                             if (res.services) {
                                 for (var x = 0; x < res.services.length; x++) {
@@ -183,7 +183,7 @@ function displayServiceCategoryItems(serviceSlug) {
                                         '<div class="col-md-4 col-6 pb-4">' +
                                             `<a class="text-decoration-none" href="${res.services[x].permalink}">` +
                                                 `<img class="img-fluid d-inline-block mr-2 rounded" src="${serviceThumbnailUrl}" width="50">` +
-                                                `<span class="text-gold-brown text-uppercase" style="font-size: 15px;">${res.services[x].service_name}</span>` +
+                                                `<span class="text-gold-brown" style="font-size: 15px;">${res.services[x].service_name}</span>` +
                                             '</a>' +
                                         '</div>';
                                 }
