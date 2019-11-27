@@ -41,6 +41,8 @@
 <?php 
 
     has_post_thumbnail() ? $mainThumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '300x300') : $mainThumbnailUrl = $logo; 
+    has_post_thumbnail() ? $fullImgUrl = get_the_post_thumbnail_url(get_the_ID(), 'full') : $fullImgUrl = $logo;
+
     get_field('other_image_1') ? $otherImage1 = get_field('other_image_1') : $otherImage1 = $logo;
     get_field('other_image_2') ? $otherImage2 = get_field('other_image_2') : $otherImage2 = $logo;
     get_field('other_image_3') ? $otherImage3 = get_field('other_image_3') : $otherImage3 = $logo;
@@ -79,7 +81,7 @@
                     <div class="card border-0 mb-5">
                         <div class="row">
                             <div class="col-12 col-md-5">
-                                <a href="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" data-lightbox="roadtrip" data-title="<?php echo get_the_excerpt(); ?>">
+                                <a href="<?php echo $fullImgUrl; ?>" data-lightbox="roadtrip" data-title="<?php echo get_the_excerpt(); ?>">
                                     <div class="card-img-left border-bottom-green-thin" style="--image-url: url(<?php echo $mainThumbnailUrl; ?>);">
                                     </div>
                                 </a>
