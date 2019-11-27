@@ -57,6 +57,8 @@ function getTreatmentsApi()
 
         // array of final objects
         $treatmentsArr[] = (object) [$term->name => $servicesArr];
+
+        $servicesArr = []; //empty arr
     }
 
     return wp_send_json([
