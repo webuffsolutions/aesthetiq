@@ -33,12 +33,6 @@ include_once('includes/rest-api/our-services/specificServiceApi.php');
 // custom actions
 include_once('includes/actions/submit-appointment.php');
 
-// add categories and tags to page cpt 
-function myplugin_settings()
-{
-    // add tag / category metabox to page
-    // register_taxonomy_for_object_type('post_tag', 'page');
-    register_taxonomy_for_object_type('category', 'page');
-}
-
-add_action('init', 'myplugin_settings');
+// admin dashboard functions
+include_once('includes/admin-dashboard/add_category_tag_to_page.php');
+include_once('includes/admin-dashboard/hide_roles.php');
