@@ -155,7 +155,7 @@ function displayServiceCategoryItems(serviceSlug) {
         success: function(res) {
             console.log(res);
 
-            var categoryThumbnailUrl = services_settings.site_url + "/wp-content/uploads/2019/11/our-essential-treatments-700x250.jpg";
+            var categoryThumbnailUrl = services_settings.site_url + "/wp-content/uploads/2019/11/auto-draft-3-700x250.jpg";
 
             if (res.data.thumbnail_url) {
                 categoryThumbnailUrl = res.data.thumbnail_url;
