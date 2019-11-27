@@ -1,8 +1,4 @@
 <?php 
-    $wishProImg = get_template_directory_uri() . '/assets/images/home/1200x1200-Wishpro.jpg';
-    $hydraGlowFacialImg = get_template_directory_uri() . '/assets/images/home/1200x1200-Hydraglow-Facial.jpg';
-    $indibaImg = get_template_directory_uri() . '/assets/images/home/1200x1200-Indiba.jpg';
-
     $args = [
         'post_type' => 'service',
         'orderby' => 'menu_order',
