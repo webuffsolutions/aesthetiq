@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-<?php $unique = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg'; ?>
+<?php 
+    $unique = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg'; 
+    $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg';
+?>
 
 <div class="mt-5 pt-5"></div>
 
@@ -45,10 +48,11 @@
             while ($globalPartners->have_posts()) {
                 $globalPartners->the_post();
                 $index = $globalPartners->current_post;
+                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') : $thumbnailUrl = $logo;
                 ?>
 
                 <div class="col-6 col-lg-3 pb-5 text-center">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" width="120" />
+                    <img src="<?php echo $thumbnailUrl; ?>" width="120" />
                 </div>
 
             <?php }
@@ -83,10 +87,11 @@
             while ($loyaltyProgramPartners->have_posts()) {
                 $loyaltyProgramPartners->the_post();
                 $index = $loyaltyProgramPartners->current_post;
+                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') : $thumbnailUrl = $logo;
                 ?>
 
                 <div class="col-6 col-lg-3 pb-5 text-center">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" width="120" />
+                    <img src="<?php echo $thumbnailUrl; ?>" width="120" />
                 </div>
 
             <?php }
