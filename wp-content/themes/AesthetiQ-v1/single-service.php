@@ -91,19 +91,19 @@
 
                                     <?php if(get_field('other_image_1')) { ?>
                                     <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
-                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="86" width="86" />
+                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="70" width="70" />
                                     </a>
                                     <?php } ?>
                                     
                                     <?php if(get_field('other_image_2')) { ?>
                                     <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
-                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="86" width="86" />
+                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="70" width="70" />
                                     </a>
                                     <?php } ?>
      
                                     <?php if(get_field('other_image_3')) { ?>
                                     <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
-                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="86" width="86" />
+                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="70" width="70" />
                                     </a>
                                     <?php } ?>
                                 </div>
