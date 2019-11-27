@@ -67,6 +67,7 @@ $(document).ready(function() {
     $.ajax({
         url: settings.site_url + "/wp-json/aesthetiq-api/v1/branches",
         success: function(res) {
+            console.log(res);
             var preferredBranchDropdown = $("#preferred_branch");
             $.each(res.branches, function() {
                 preferredBranchDropdown.append(

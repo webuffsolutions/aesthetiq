@@ -12,17 +12,22 @@ function branchesApiRoute()
 
 function getBranchesApi()
 {
-    $branches = [
-        'WEST AVE', 'VISAYAS AVE',
-        'TIMOG AVE', 'MARILAO',
-        'MALOLOS', 'TARLAC',
-        'SM TARLAC', 'CALASIAO',
-        'CABANATUAN', 'BALIWAG',
-        'TELABASTAGAN', 'URDANETA'
+    $args = [
+        'post_type' => 'location',
+        'orderby' => 'menu_order',
+        'order' => 'ASC'
     ];
+
+    $locations = new WP_Query($args);
+
+    $locationsArr = [];
+    while ($locations->have_posts()) {
+        $locations->the_post();
+        $locationsArr[] = strtoupper(get_the_title());
+    }
 
     return wp_send_json([
         'success' => true,
-        'branches' => $branches
+        'branches' => $locationsArr
     ], 200);
 }
