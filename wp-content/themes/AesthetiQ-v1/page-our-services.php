@@ -40,7 +40,7 @@
 
 <section id="our-signature-treatments" class="py-5">
     <h1 class="header p-5 mb-5">Our Services</h1>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row px-md-5 px-0">
             <div class="col-md-4 pb-4 sticky">
                 <?php get_template_part('template-parts/our-services/left-navigation'); ?>

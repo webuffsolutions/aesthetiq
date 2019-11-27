@@ -7,7 +7,7 @@ register_nav_menus([
     'footer_our_team' => __('Footer - Our Team'),
     'footer_menu' => __('Footer - Menu'),
     'footer_contact' => __('Footer - Contact'),
-    'footer_follow' => __('Footer - Follow'),
+    // 'footer_follow' => __('Footer - Follow'),
     'footer_legal' => __('Footer - Legal')
 ]);
 

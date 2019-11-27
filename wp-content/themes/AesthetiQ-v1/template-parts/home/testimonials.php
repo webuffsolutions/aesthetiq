@@ -1,7 +1,7 @@
 <?php $unique = get_template_directory_uri() . '/assets/images/profile-icons/unique.png'; ?>
 <section id="testimonials-section">
     <h1 class="header p-5">Testimonials</h1>
-    <div class="container">
+    <div class="container-fluid">
         <div id="myCarousel" class="carousel1 slide px-0" data-ride="carousel" data-interval="5000" data-pause="false">
 
             <!-- Wrapper for carousel items -->

@@ -5,7 +5,7 @@
 <section id="locations" class="pt-5">
     <h1 class="header p-5">Locations</h1>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <?php
         $args = [

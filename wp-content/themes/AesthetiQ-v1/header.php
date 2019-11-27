@@ -4,6 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
+    <style>
+        p {
+            font-size: 1.2rem !important;
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>

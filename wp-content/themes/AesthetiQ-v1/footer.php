@@ -4,7 +4,7 @@
 <footer class="page-footer bg-header">
     <div class="container text-center text-md-left py-2">
         <div class="row">
-            <div class="col-md-12 my-5">
+            <div class="col-md-12 my-5 pl-md-0">
                 <a href="<?php echo site_url(); ?>" class="navbar-brand">
                     <img src="<?php echo $footerLogo; ?>" id="no-lazy-load" width="200" />
                 </a>
@@ -13,7 +13,7 @@
 
         <div class="row">
             <!-- OUR TEAM -->
-            <div class="col-md-3 mt-md-0 mr-auto mb-2 text-white px-5 px-md-0">
+            <div class="col-md-4 mt-md-0 mr-auto mb-2 text-white px-5 px-md-0">
                 <h5 class="font-weight-bold">OUR TEAM</h5>
                 <?php $args = [
                     'theme_location' => 'footer_our_team',
@@ -51,20 +51,6 @@
                 ];
 
                 if (has_nav_menu('footer_contact')) {
-                    wp_nav_menu($args);
-                } ?>
-            </div>
-
-            <!-- Follow -->
-            <div class="col-md-2 col-4 mt-md-0 mr-auto mb-2 py-3 py-md-0">
-                <h5 class="text-white font-weight-bold">Follow</h5>
-                <?php $args = [
-                    'theme_location' => 'footer_follow',
-                    'container'      => false, // add div container
-                    'menu_class'     => 'list-unstyled' // ul class
-                ];
-
-                if (has_nav_menu('footer_follow')) {
                     wp_nav_menu($args);
                 } ?>
             </div>
