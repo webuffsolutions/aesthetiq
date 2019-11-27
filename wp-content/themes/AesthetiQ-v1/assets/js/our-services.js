@@ -124,8 +124,10 @@ function displayAllServices() {
                         div +=
                             '<div class="col-md-4 col-6 pb-4">' +
                             `<a class="text-decoration-none" href="${arr[index].services[x].permalink}">` +
-                            `<img class="img-fluid d-inline-block mr-2 rounded" src="${serviceThumbnail}" width="50">` +
-                            `<span class="text-gold-brown">${arr[index].services[x].service_name}</span>` +
+                                `<div class="d-flex justify-content-start">` +
+                                    `<img class="img-fluid d-inline-block mr-2 rounded" src="${serviceThumbnail}" width="50">` +
+                                    `<span class="text-gold-brown align-self-center" style="font-size: 15px;">${arr[index].services[x].service_name}</span>` +
+                                `</div>` +
                             "</a>" +
                             "</div>";
                     }
@@ -182,8 +184,10 @@ function displayServiceCategoryItems(serviceSlug) {
                                     div+=
                                         '<div class="col-md-4 col-6 pb-4">' +
                                             `<a class="text-decoration-none" href="${res.services[x].permalink}">` +
-                                                `<img class="img-fluid d-inline-block mr-2 rounded" src="${serviceThumbnailUrl}" width="50">` +
-                                                `<span class="text-gold-brown" style="font-size: 15px;">${res.services[x].service_name}</span>` +
+                                                `<div class="d-flex justify-content-start">` +
+                                                    `<img class="img-fluid d-inline-block mr-2 rounded" src="${serviceThumbnailUrl}" width="50">` +
+                                                    `<span class="text-gold-brown align-self-center" style="font-size: 15px;">${res.services[x].service_name}</span>` +
+                                                `</div>` +
                                             '</a>' +
                                         '</div>';
                                 }
