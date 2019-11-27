@@ -80,7 +80,7 @@
                         <div class="row">
                             <div class="col-12 col-md-5">
                                 <a href="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                    <div class="card-img-left border-bottom-green-thin" style="--image-url: url(<?php echo $mainThumbnailUrl; ?>)">
+                                    <div class="card-img-left border-bottom-green-thin" style="--image-url: url(<?php echo $mainThumbnailUrl; ?>);">
                                     </div>
                                 </a>
 
