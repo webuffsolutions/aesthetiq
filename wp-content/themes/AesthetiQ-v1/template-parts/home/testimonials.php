@@ -9,18 +9,18 @@
 
     $testimonials = new WP_Query($args);
 ?>
+
+<?php if ( $testimonials->have_posts() ) { ?>
 <section id="testimonials-section" class="pb-5 mb-5">
     <h1 class="header p-5">Testimonials</h1>
     <div class="container-fluid">
         <div id="myCarousel" class="carousel1 slide px-0" data-ride="carousel" data-interval="5000" data-pause="false">
-
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
 
                 <?php 
                     $i = 0;
-                    if ( $testimonials->have_posts() ) : while ( $testimonials->have_posts() ) : $testimonials->the_post();
-
+                    while ( $testimonials->have_posts() ) : $testimonials->the_post();
                     has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') : $thumbnailUrl = $unique;
 
                     if ($i % 3 == 0) { ?>
@@ -66,9 +66,10 @@
                         $i++;
                     ?>
 
-                    <?php endwhile; endif; wp_reset_postdata(); ?>
+                    <?php endwhile; wp_reset_postdata(); ?>
 
             </div>
         </div>
     </div>
 </section>
+<?php } ?>
