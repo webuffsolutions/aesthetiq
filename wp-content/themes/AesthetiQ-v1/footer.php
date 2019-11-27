@@ -73,7 +73,7 @@
 
         <div class="row mt-2 px-md-0 px-5">
             <div class="col-md-12 pl-0">
-                <p class="text-white">
+                <p class="text-white font-1">
                     © <?php echo date('Y') .' '. get_bloginfo('name'); ?>. | Powered by
                     <a href="https://webuffsolutions.com" target="_blank" class="text-decoration-none text-white font-weight-bold cera-pro">
                         WeBuff Solutions

@@ -11225,6 +11225,9 @@ a.action:hover {
   min-width: 300px;
   max-width: 300px; }
 
+.font-1 {
+  font-size: 1rem !important; }
+
 .carousel {
   margin-top: 18vh !important;
   background: #444; }
