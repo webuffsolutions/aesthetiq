@@ -36,9 +36,10 @@
 
 <div class="mt-5 pt-5"></div>
 
-<?php $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg'; ?>
-
 <?php 
+
+    $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg';
+    $logo600x450 = get_template_directory_uri() . '/assets/images/logo/auto-draft-3-600x450.jpg';
 
     has_post_thumbnail() ? $mainThumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '300x300') : $mainThumbnailUrl = $logo; 
     has_post_thumbnail() ? $fullImgUrl = get_the_post_thumbnail_url(get_the_ID(), 'full') : $fullImgUrl = $logo;
@@ -159,7 +160,7 @@
                             
                             while ($otherServices->have_posts()) {
                                 $otherServices->the_post();
-                                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '600x450') : $thumbnailUrl = $logo;
+                                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '600x450') : $thumbnailUrl = $logo600x450;
                                 
                         ?>
 
