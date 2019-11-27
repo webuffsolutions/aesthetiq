@@ -90,19 +90,19 @@
                                 <div class="d-flex justify-content-start mt-2">
 
                                     <?php if(get_field('other_image_1')) { ?>
-                                    <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
+                                    <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
                                         <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
                                     
                                     <?php if(get_field('other_image_2')) { ?>
-                                    <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
+                                    <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
                                         <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
      
                                     <?php if(get_field('other_image_3')) { ?>
-                                    <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
+                                    <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
                                         <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
