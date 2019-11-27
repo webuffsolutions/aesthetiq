@@ -17,7 +17,6 @@
     ];
 
     $services = new WP_Query($args);
-    
 ?>
 
 <section id="our-signature-treatments" class="py-5">
