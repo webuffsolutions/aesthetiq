@@ -58,7 +58,7 @@
     </div>
 </section>
 
-<div class="pb-5"></div>
+<div class="pb-5 mb-5"></div>
 
 <!-- banners -->
 <?php get_template_part('template-parts/redirects'); ?>

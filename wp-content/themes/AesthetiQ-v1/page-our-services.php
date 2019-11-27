@@ -38,7 +38,7 @@
 
 <div class="mt-5 pt-5"></div>
 
-<section id="our-signature-treatments" class="py-5">
+<section id="our-signature-treatments" class="py-5 mb-5">
     <h1 class="header p-5 mb-5">Our Services</h1>
     <div class="container-fluid">
         <div class="row px-md-5 px-0">
@@ -52,7 +52,6 @@
                 <div id="services-content"></div>
             </div>
         </div>
-    </div>
     </div>
 </section> <!-- banners -->
 <?php get_template_part('template-parts/redirects'); ?>

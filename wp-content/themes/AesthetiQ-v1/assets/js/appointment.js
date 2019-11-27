@@ -41,6 +41,7 @@ $(document).ready(function() {
     $.ajax({
         url: settings.site_url + "/wp-json/aesthetiq-api/v1/treatments",
         success: function(res) {
+            console.log(res);
             $.each(res.treatments, function(i, optgroups) {
                 // populate optgroups
                 $.each(optgroups, function(groupName, options) {

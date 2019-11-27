@@ -14,30 +14,28 @@ function getTreatmentsApi()
 {
 
     $treatments = [
-        [
-            'FACIAL TREATMENTS' => [
-                ['options' => 'AQ Clean'],
-                ['options' => 'AQ Pure'],
-                ['options' => 'AQ Fresh'],
-                ['options' => 'AQ Clear'],
-                ['options' => 'AQ Hydra Glow'],
-                ['options' => 'Dermalogica - Basic Skincare Treatment'],
-                ['options' => 'Dermalogica - Relaxing Skin Treatment'],
-                ['options' => 'Dermalogica - Deep Cleansing Treatment'],
-                ['options' => 'Dermalogica - Anti-Aging Skin Treatment'],
-                ['options' => 'Wish Pro - Calming'],
-                ['options' => 'Wish Pro - Hyaluronic'],
-                ['options' => 'Wish Pro - Whitening'],
-                ['options' => 'Wish Pro - Neo-Revive'],
-                ['options' => 'Wish Pro - BTX'],
-                ['options' => 'AQ Cryo Bright'],
-                ['options' => 'AQ L`age Revive'],
-                ['options' => 'AQ Visage Radiance'],
-                ['options' => 'MACHINE - Indiba Age Smart'],
-                ['options' => 'MACHINE - Foculift'],
-                ['options' => 'MACHINE - Photodynamic Therapy']
-            ]
-        ],
+        ['FACIAL TREATMENTS' => [
+            ['options' => 'AQ Clean'],
+            ['options' => 'AQ Pure'],
+            ['options' => 'AQ Fresh'],
+            ['options' => 'AQ Clear'],
+            ['options' => 'AQ Hydra Glow'],
+            ['options' => 'Dermalogica - Basic Skincare Treatment'],
+            ['options' => 'Dermalogica - Relaxing Skin Treatment'],
+            ['options' => 'Dermalogica - Deep Cleansing Treatment'],
+            ['options' => 'Dermalogica - Anti-Aging Skin Treatment'],
+            ['options' => 'Wish Pro - Calming'],
+            ['options' => 'Wish Pro - Hyaluronic'],
+            ['options' => 'Wish Pro - Whitening'],
+            ['options' => 'Wish Pro - Neo-Revive'],
+            ['options' => 'Wish Pro - BTX'],
+            ['options' => 'AQ Cryo Bright'],
+            ['options' => 'AQ L`age Revive'],
+            ['options' => 'AQ Visage Radiance'],
+            ['options' => 'MACHINE - Indiba Age Smart'],
+            ['options' => 'MACHINE - Foculift'],
+            ['options' => 'MACHINE - Photodynamic Therapy']
+        ]],
         ['WELLNESS' => [
             ['options' => 'AQ Relax'],
             ['options' => 'AQ Indulge'],
@@ -100,8 +98,23 @@ function getTreatmentsApi()
         ]]
     ];
 
+    // 
+    $terms = get_terms([
+        'taxonomy' => 'service_category', 
+        'hide_empty' => false,
+        'exclude' => [13] // exclude featured signature treatments
+    ]);
+
+    $testArr = [];
+
+    // $i = 0;
+    // foreach ($terms as $term) {
+
+    // }
+
     return wp_send_json([
         'success' => true,
-        'treatments' => $treatments
+        'treatments' => $treatments,
+        'test' => $testArr
     ], 200);
 }
