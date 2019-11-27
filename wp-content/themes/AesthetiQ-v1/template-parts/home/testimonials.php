@@ -23,6 +23,8 @@
                     while ( $testimonials->have_posts() ) : $testimonials->the_post();
                     has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') : $thumbnailUrl = $unique;
 
+                    get_field('date_added') ? $dateAdded = get_field('date_added') : $dateAdded = get_the_date();
+
                     if ($i % 3 == 0) { ?>
                         <div class="item carousel-item <?php echo $i == 0 ? 'active' : ''; ?>">
                             <div class="row justify-content-center d-flex align-items-center">
@@ -42,7 +44,7 @@
                                             <div class="overview">
                                                 <b><?php echo get_field('full_name'); ?></b>
                                                 <div class="details">
-                                                    <?php echo get_the_date(); ?>
+                                                    <?php echo $dateAdded; ?>
                                                 </div>
                                                 <div class="star-rating">
                                                     <ul class="list-inline">
