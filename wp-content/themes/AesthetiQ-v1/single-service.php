@@ -155,7 +155,7 @@
                             
                             while ($otherServices->have_posts()) {
                                 $otherServices->the_post();
-                                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '600x550') : $thumbnailUrl = $logo;
+                                has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '600x450') : $thumbnailUrl = $logo;
                                 
                         ?>
 
