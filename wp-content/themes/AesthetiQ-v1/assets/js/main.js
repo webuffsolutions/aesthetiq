@@ -18,8 +18,14 @@ $(document).ready(function() {
   // home carousel
   $(".slide").css("display", "block"); // show images when slider is initialized
 
-  $(".carousel, .carousel1").carousel({
+  $(".carousel").carousel({
     interval: 5000,
     ride: "carousel"
   });
+
+  $(".carousel1").carousel({
+    interval: 10000,
+    ride: "carousel"
+  });
+
 });
