@@ -11228,8 +11228,11 @@ a.action:hover {
 .font-1 {
   font-size: 1rem !important; }
 
+p {
+  font-size: 1.2rem !important; }
+
 .carousel {
-  margin-top: 18vh !important;
+  margin-top: 10vh !important;
   background: #444; }
 
 .carousel-item .img-fluid {
