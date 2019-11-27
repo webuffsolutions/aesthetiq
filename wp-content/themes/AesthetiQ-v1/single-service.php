@@ -82,7 +82,7 @@
                     <div class="card border-0 mb-5">
                         <div class="row">
                             <div class="col-12 col-md-5">
-                                <a href="<?php echo $fullImgUrl; ?>" data-lightbox="roadtrip" data-title="<?php echo get_the_excerpt(); ?>">
+                                <a href="<?php echo $fullImgUrl; ?>" data-lightbox="roadtrip" data-title="">
                                     <div class="card-img-left border-bottom-green-thin" style="--image-url: url(<?php echo $mainThumbnailUrl; ?>);">
                                     </div>
                                 </a>
@@ -90,19 +90,19 @@
                                 <div class="d-flex justify-content-start mt-2">
 
                                     <?php if(get_field('other_image_1')) { ?>
-                                    <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
+                                    <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
                                         <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
                                     
                                     <?php if(get_field('other_image_2')) { ?>
-                                    <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
+                                    <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
                                         <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
      
                                     <?php if(get_field('other_image_3')) { ?>
-                                    <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php get_the_excerpt(); ?>">
+                                    <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="">
                                         <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
