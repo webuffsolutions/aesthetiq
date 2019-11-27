@@ -31,12 +31,11 @@ function getTreatmentsApi()
     ]);
 
     $treatmentsArr = [];
+    $servicesArr = [];
 
-    $i = 0;
     foreach ($terms as $term) {
         $term->name = strtoupper($term->name);
 
-        $servicesArr = [];
         $args = [
             'post_type' => 'service',
             'orderby' => 'menu_order',
@@ -53,13 +52,11 @@ function getTreatmentsApi()
         $services = new WP_Query($args);
         while ($services->have_posts()) {
             $services->the_post();
-            $servicesArr = ['options' => wp_specialchars_decode( get_the_title() )];
+            $servicesArr[] = ['options' => wp_specialchars_decode( get_the_title() )];
         }
 
         // array of final objects
-        $treatmentsArr[] = (object) [$term->name => [
-            $servicesArr
-        ]];
+        $treatmentsArr[] = (object) [$term->name => $servicesArr];
     }
 
     return wp_send_json([
