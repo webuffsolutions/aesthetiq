@@ -79,7 +79,7 @@
                     <div class="card border-0 mb-5">
                         <div class="row">
                             <div class="col-12 col-md-5">
-                                <a href="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" data-lightbox="roadtrip" data-title="<?php echo get_the_content(); ?>">
+                                <a href="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" data-lightbox="roadtrip" data-title="<?php echo get_the_excerpt(); ?>">
                                     <div class="card-img-left border-bottom-green-thin" style="--image-url: url(<?php echo $mainThumbnailUrl; ?>);">
                                     </div>
                                 </a>
