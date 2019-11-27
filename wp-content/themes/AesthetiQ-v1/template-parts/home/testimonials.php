@@ -9,10 +9,12 @@
 
                 <div class="item carousel-item active">
                     <div class="row justify-content-center">
-
                         <div class="col-lg-4 pb-4">
                             <div class="testimonial-wrapper">
-                                <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                <p class="testimonial">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, 
+                                    luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.
+                                </p>
                                 <div class="media">
                                     <div class="media-left d-flex mr-3">
                                         <img src="<?php echo $unique; ?>" />
@@ -38,7 +40,10 @@
 
                         <div class="col-lg-4 pb-4">
                             <div class="testimonial-wrapper">
-                                <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                <p class="testimonial">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, 
+                                    luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.
+                                </p>
                                 <div class="media">
                                     <div class="media-left d-flex mr-3">
                                         <img src="<?php echo $unique; ?>" />
@@ -64,7 +69,10 @@
 
                         <div class="col-lg-4 pb-4">
                             <div class="testimonial-wrapper">
-                                <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                <p class="testimonial">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, 
+                                    luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.
+                                </p>
                                 <div class="media">
                                     <div class="media-left d-flex mr-3">
                                         <img src="<?php echo $unique; ?>" />
@@ -87,7 +95,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -96,7 +103,10 @@
 
                         <div class="col-lg-4 pb-4">
                             <div class="testimonial-wrapper">
-                                <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                <p class="testimonial">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, 
+                                    luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.
+                                </p>
                                 <div class="media">
                                     <div class="media-left d-flex mr-3">
                                         <img src="<?php echo $unique; ?>" />
@@ -122,7 +132,10 @@
 
                         <div class="col-lg-4 pb-4">
                             <div class="testimonial-wrapper">
-                                <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                <p class="testimonial">
+                                    Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. 
+                                    Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.
+                                </p>
                                 <div class="media">
                                     <div class="media-left d-flex mr-3">
                                         <img src="<?php echo $unique; ?>" />

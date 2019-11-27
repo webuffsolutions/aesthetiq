@@ -65,13 +65,15 @@
 <section id="our-signature-treatments" class="py-5">
     <h1 class="header p-5 mb-5">Our Services</h1>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row px-md-5 px-0">
             <div class="col-md-4 pb-4 pr-md-5 sticky">
                 <?php get_template_part('template-parts/our-services/left-navigation'); ?>
             </div>
 
-            <div class="col-md-8 pl-md-5">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-7">
                 <div id="services-content"></div>
                 <div id="single-service-content">
                     <div class="card border-0 mb-5">
@@ -86,19 +88,19 @@
 
                                     <?php if(get_field('other_image_1')) { ?>
                                     <a href="<?php echo $otherImage1; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="77" width="77" />
+                                        <img src="<?php echo $otherImage1; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
                                     
                                     <?php if(get_field('other_image_2')) { ?>
                                     <a href="<?php echo $otherImage2; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="77" width="77" />
+                                        <img src="<?php echo $otherImage2; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
      
                                     <?php if(get_field('other_image_3')) { ?>
                                     <a href="<?php echo $otherImage3; ?>" class="pr-2" data-lightbox="roadtrip" data-title="<?php the_content(); ?>">
-                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="77" width="77" />
+                                        <img src="<?php echo $otherImage3; ?>" class="scale-down rounded" height="86" width="86" />
                                     </a>
                                     <?php } ?>
                                 </div>
