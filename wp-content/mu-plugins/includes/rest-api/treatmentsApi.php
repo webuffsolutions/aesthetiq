@@ -34,6 +34,8 @@ function getTreatmentsApi()
 
     $i = 0;
     foreach ($terms as $term) {
+        $term->name = strtoupper($term->name);
+
         $servicesArr = [];
         $args = [
             'post_type' => 'service',
