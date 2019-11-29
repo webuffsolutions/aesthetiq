@@ -18,9 +18,11 @@ include_once('includes/custom-post-types/redirect.php');
 include_once('includes/custom-post-types/appointment.php');
 include_once('includes/custom-post-types/service.php');
 include_once('includes/custom-post-types/testimonial.php');
+include_once('includes/custom-post-types/product.php');
 
 // custom taxonomies
 include_once('includes/taxonomies/service_category.php');
+include_once('includes/taxonomies/product_category.php');
 
 // custom rest api
 include_once('includes/rest-api/birthDetailsApi.php');

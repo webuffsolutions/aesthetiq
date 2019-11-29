@@ -29,6 +29,7 @@ function mainStyles()
     wp_enqueue_script('sweetalert', get_theme_file_uri('/node_modules/sweetalert2/dist/sweetalert2.all.min.js'), NULL, '1.0', true);
     wp_enqueue_script('lighbox', get_theme_file_uri('/node_modules/lightbox2/dist/js/lightbox.min.js'), NULL, '1.0', true);
     wp_enqueue_script('our-services', get_theme_file_uri('/assets/js/our-services.js'), NULL, microtime(), true);
+    wp_enqueue_script('our-products', get_theme_file_uri('/assets/js/our-products.js'), NULL, microtime(), true);
     wp_enqueue_script('init', get_theme_file_uri('/assets/js/init.js'), NULL, microtime(), true);
 
     // https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js
@@ -37,7 +38,13 @@ function mainStyles()
 
     wp_localize_script('appointment', 'settings', ['site_url' => get_option('siteurl'), 'ajaxurl' => admin_url('admin-ajax.php')]);
     wp_localize_script('init', 'init_settings', ['permalink' => basename(get_permalink())]);
+
     wp_localize_script('our-services', 'services_settings', [
+        'site_url' => get_option('siteurl'),
+        'permalink' => basename(get_permalink())
+    ]);
+
+    wp_localize_script('our-products', 'products_settings', [
         'site_url' => get_option('siteurl'),
         'permalink' => basename(get_permalink())
     ]);

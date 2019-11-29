@@ -1,39 +1,5 @@
 <?php get_header(); ?>
 
-<style>
-    .list-group-item.active {
-        background-color: #5e4b45 !important;
-        border-color: #5e4b45 !important;
-    }
-
-    .list-group-item.active a {
-        color: #fff !important;
-    }
-
-    .list-group-item.child-active {
-        background-color: #c28269 !important;
-        border-color: #c28269 !important;
-        color: #fff !important;
-    }
-
-    @media only screen and (min-width: 1200px) {
-        div.sticky {
-            position: -webkit-sticky !important;
-            /* Safari */
-            position: sticky !important;
-            top: 140px !important;
-        }
-    }
-
-    .card-img-left {
-        color: #fff;
-        height: 14rem;
-        background: var(--image-url);
-        background-repeat: no-repeat !important;
-        background-size: cover;
-    }
-</style>
-
 <?php $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg'; ?>
 
 <div class="mt-5 pt-5"></div>

@@ -16,7 +16,7 @@ function createServiceCategoryHierarchicalTaxonomy()
         'parent_item_colon' => __('Parent Service Category:'),
         'edit_item' => __('Edit Service Category'),
         'update_item' => __('Update Service Category'),
-        'add_new_item' => __('New Service Category'),
+        'add_new_item' => __('Publish'),
         'new_item_name' => __('New Service Category Name'),
         'menu_name' => __('Service Category'),
     ];

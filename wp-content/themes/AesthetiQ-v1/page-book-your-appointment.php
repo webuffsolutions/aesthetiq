@@ -9,6 +9,8 @@
     }
 </style>
 
+<div class="pt-5"></div>
+
 <section id="our-signature-treatments" class="py-5 bg-pink">
     <h1 class="header white-header p-5 mt-5">
         <?php the_title(); ?>
