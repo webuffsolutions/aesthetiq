@@ -82,7 +82,7 @@ $(document).ready(function() {
 
 // display all services
 function displayAllServices() {
-    displayLoader();
+    displayServicesPageLoader();
 
     $.ajax({
         url: services_settings.site_url + "/wp-json/aesthetiq-api/v1/services",
@@ -148,7 +148,7 @@ function displayAllServices() {
 
 // display specific service category
 function displayServiceCategoryItems(serviceSlug) {
-    displayLoader();
+    displayServicesPageLoader();
 
     $.ajax({
         url: services_settings.site_url + `/wp-json/aesthetiq-api/v1/specific-service/${serviceSlug}`,
@@ -258,7 +258,7 @@ $('#selectDropdownCategory').on('change', function(e) {
     }
 });
 
-function displayLoader() {
+function displayServicesPageLoader() {
     var div = "";
     div +=
         '<div class="text-center"><img src="' +

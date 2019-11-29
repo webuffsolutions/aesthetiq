@@ -14,8 +14,8 @@
     get_field('other_image_2') ? $otherImage2 = get_field('other_image_2') : $otherImage2 = $logo;
     get_field('other_image_3') ? $otherImage3 = get_field('other_image_3') : $otherImage3 = $logo;
 
-    // for other services
-    $termList = get_the_terms(get_the_ID(), 'service_category'); 
+    // for other products
+    $termList = get_the_terms(get_the_ID(), 'product_category'); 
     $types ='';
     $termArr = [];
 
@@ -31,20 +31,20 @@
     $typesz = rtrim($types, ', ');
 ?>
 
-<section id="our-signature-treatments" class="py-5">
-    <h1 class="header p-5 mb-5">Our Services</h1>
+<section class="py-5">
+    <h1 class="header p-5 mb-5">Our Products</h1>
 
     <div class="container-fluid">
         <div class="row px-md-5 px-0">
             <div class="col-md-4 pb-4 pr-md-5 sticky">
-                <?php get_template_part('template-parts/our-services/left-navigation'); ?>
+                <?php get_template_part('template-parts/our-products/left-navigation'); ?>
             </div>
 
             <div class="col-md-1"></div>
 
             <div class="col-md-7">
-                <div id="services-content"></div>
-                <div id="single-service-content">
+                <div id="products-content"></div>
+                <div id="single-product-content">
                     <div class="card border-0 mb-5">
                         <div class="row">
                             <div class="col-12 col-md-5">
@@ -87,20 +87,10 @@
                         </div>
                     </div>
 
-                    <!-- book appointment -->
-                    <div class="row mb-5">
-                        <div class="mx-auto">
-                            <a href="<?php echo site_url('book-your-appointment'); ?>" class="btn btn-lg bg-pink px-5 pt-3 rounded-0 text-white border-white text-uppercase">
-                                <i class="fas fa-play fa-sm pl-2"></i> BOOK APPOINTMENT
-                            </a>
-                        </div>
-                    </div>
-                    <!-- ./ book appointment -->
-
-                    <!-- other services -->
+                    <!-- other products -->
                     <div class="row">
                         <div class="px-2 pt-5 pb-2 font-weight-bold">
-                            <h3>OTHER SERVICES</h3>
+                            <h3>OTHER PRODUCTS</h3>
                         </div>
                     </div>
 
@@ -109,23 +99,23 @@
                         <?php 
                         
                             $args = [
-                                'post_type' => 'service',
+                                'post_type' => 'product',
                                 'orderby' => 'menu_order',
                                 'order' => 'ASC',
                                 'post__not_in' => [get_the_ID()],
                                 'tax_query' => [
                                     [
-                                        'taxonomy' => 'service_category',
+                                        'taxonomy' => 'product_category',
                                         'field' => 'slug',
                                         'terms' => $termArr
                                     ]
                                 ]
                             ];
                     
-                            $otherServices = new WP_Query($args);
+                            $otherProducts = new WP_Query($args);
                             
-                            while ($otherServices->have_posts()) {
-                                $otherServices->the_post();
+                            while ($otherProducts->have_posts()) {
+                                $otherProducts->the_post();
                                 has_post_thumbnail() ? $thumbnailUrl = get_the_post_thumbnail_url(get_the_ID(), '600x450') : $thumbnailUrl = $logo600x450;
                                 
                         ?>
@@ -149,7 +139,7 @@
     </div>
 </section>
 
-<?php get_template_part('template-parts/single-service/redirects'); ?>
+<?php get_template_part('template-parts/single-product/redirects'); ?>
 <?php get_template_part('template-parts/back-to-top'); ?>
 
 <?php get_footer(); ?>

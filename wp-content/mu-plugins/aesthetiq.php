@@ -32,6 +32,9 @@ include_once('includes/rest-api/preferredTimeApi.php');
 include_once('includes/rest-api/our-services/servicesApi.php');
 include_once('includes/rest-api/our-services/specificServiceApi.php');
 
+include_once('includes/rest-api/our-products/productsApi.php');
+include_once('includes/rest-api/our-products/specificProductApi.php');
+
 // custom actions
 include_once('includes/actions/submit-appointment.php');
 
