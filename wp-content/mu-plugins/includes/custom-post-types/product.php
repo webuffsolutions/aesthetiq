@@ -20,8 +20,8 @@ function AQCreateProductCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'product',
+        'map_meta_cap' => true,
         'public' => true,
         'label'  => 'Products',
         'labels' => $labels,

@@ -20,8 +20,8 @@ function AQCreateRedirectCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'redirect',
+        'map_meta_cap' => true,
         'public' => true,
         'label'  => 'Redirects',
         'labels' => $labels,

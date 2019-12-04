@@ -20,8 +20,8 @@ function AQCreateServiceCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'service',
+        'map_meta_cap' => true,
         'public' => true,
         'label'  => 'Services',
         'labels' => $labels,

@@ -20,8 +20,8 @@ function AQCreateLoyaltyProgramPartnerCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'loyalty_partner',
+        'map_meta_cap' => true,
         'public' => true,
         'label'  => 'Loyalty Program Partners',
         'labels' => $labels,

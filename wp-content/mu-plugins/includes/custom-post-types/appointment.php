@@ -20,8 +20,8 @@ function AQCreateAppointmentCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'appointment',
+        'map_meta_cap' => true,
         'public' => false,
         'publicly_queryable' => false,
         'show_ui' => true,

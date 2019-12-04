@@ -20,8 +20,8 @@ function AQCreateTestimonialCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'testimonial',
+        'map_meta_cap' => true,
         'public' => false,
         'publicly_queryable' => false,
         'show_ui' => true,
@@ -93,7 +93,7 @@ function customTestimonialColumns($column, $post_id)
             echo get_post_field('message', $post_id);
             break;
         case 'rating':
-            echo get_post_field('rating', $post_id) . '/5'; 
+            echo get_post_field('rating', $post_id) . '/5';
             break;
         case 'order':
             echo get_post_field('menu_order', $post_id);

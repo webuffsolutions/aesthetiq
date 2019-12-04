@@ -20,8 +20,8 @@ function AQCreateGlobalPartnerCpt()
     ];
 
     $args = [
-        'capability_type' => 'post',
-        // 'map_meta_cap' => true,
+        'capability_type' => 'global_partner',
+        'map_meta_cap' => true,
         'public' => true,
         'label'  => 'Global Partners',
         'labels' => $labels,
