@@ -193,7 +193,7 @@ $(document).ready(function() {
                         icon: "success",
                         showConfirmButton: false,
                         animation: false,
-                        timer: 3000
+                        timer: 6000
                     });
                 })
                 .fail(function(xhr, status, error) {

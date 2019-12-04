@@ -32,7 +32,7 @@ function submitAppointment()
     update_field('preferred_time_suffix', $_POST['preferred_time_suffix'], $postID);
     update_field('message', $_POST['message'], $postID);
 
-    $to = 'denneth.dacara@gmail.com';
+    $to = 'aq.appointments@gmail.com';
     $subject = $_POST['full_name'] . ' has booked an appointment.';
 
     $message = '
