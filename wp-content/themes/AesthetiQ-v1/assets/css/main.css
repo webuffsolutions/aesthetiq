@@ -11231,6 +11231,12 @@ a.action:hover {
 p {
   font-size: 1.2rem !important; }
 
+.d-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -ms-flexbox; }
+
 .carousel {
   margin-top: 10vh !important;
   background: #444; }
