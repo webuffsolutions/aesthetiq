@@ -81,7 +81,7 @@
                                         <?php the_title(); ?>
                                     </h1>
                                     <p style="color: #A9A9A9;"><?php echo $typesz; ?></p>
-                                    <p><?php the_content(); ?></p>
+                                    <p><?php echo apply_filters('the_content', get_post_field('post_content', get_the_ID())); ?></p>
                                 </span>
                             </div>
                         </div>
