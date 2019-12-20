@@ -12,9 +12,9 @@
                 <?php get_template_part('template-parts/our-services/left-navigation'); ?>
             </div>
 
-            <div class="col-md-1"></div>
+            <!-- <div class="col-md-1"></div> -->
 
-            <div class="col-md-7">
+            <div class="col-md-8 offset-md-2">
                 <div id="services-content"></div>
             </div>
         </div>

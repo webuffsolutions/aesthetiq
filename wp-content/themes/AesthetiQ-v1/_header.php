@@ -6,7 +6,19 @@
     <?php wp_head(); ?>
 
     <style>
-        
+        .menu-area {
+            position: static;
+        }
+
+        .mega-area {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            /* background-color: #f8f9fa; */
+        }
+
         .scrollable-menu {
             height: auto;
             max-height: 568px;
@@ -18,49 +30,35 @@
             color: #A9A9A9;
         }
 
-        .menu-area {
-            position: static;
-            /* margin-bottom: -20px; */
+        .close-mega-one {
+            cursor: pointer;
         }
 
-        .mega-area {
+        /* hover effect */
+
+        .dropdown:after {
+            content: " ";
             position: absolute;
+            /* bottom: -12px; */
+            /* left: 0; */
             width: 100%;
-            left: 0;
-            right: 0;
-            padding: 15px;
-            margin-top: -10px;
-            /* background-color: #f8f9fa; */
+            height: 12px;
+            background: transparent;
         }
 
-        .navbar-nav li:hover > div.dropdown-menu { display: block; }
-
-        .dropdown-submenu { position:relative; }
-
-        .dropdown-submenu>.dropdown-menu {
-            top:0;
-            left:100%;
-            margin-top:-6px;
+        .dropdown>.dropdown-menu {
+            /* top: 200%; */
+            /* transition: 0.3s all ease-in-out; */
         }
 
-        /* rotate caret on hover */
-        .dropdown-menu > li > a:hover:after {
-            text-decoration: underline;
-            transform: rotate(-90deg);
+        .dropdown:hover > .dropdown-menu {
+            display: block !important;
         }
 
-        .dropdown-item:active {
-            color: #16181b;
-            background-color: transparent;
+        .dropdown>.dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+            /* pointer-events: none; */
         }
-
-        .dropdown-item:hover,
-        .dropdown-item:focus {
-            color: #16181b;
-            text-decoration: none;
-            outline: 0;
-        }
-
 
     </style>
 </head>

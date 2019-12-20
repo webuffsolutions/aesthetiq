@@ -16,8 +16,8 @@
     }
 ?>
 
-<div class="list-group sticky">
-    <div id="myGroup" class="d-none d-md-block">
+<div class="list-group">
+    <div id="myGroup" class="d-none1 d-md-block1" style="display: none;">
         <a href="#!" class="list-group-item list-group-item-action border-0 pb-1 all-services" onclick="clickCategory(event);" data-parent="#menu">ALL SERVICES</a>
         <?php
         foreach ($serviceCategory as $cat) {
