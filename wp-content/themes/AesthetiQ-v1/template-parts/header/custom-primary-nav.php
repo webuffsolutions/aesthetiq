@@ -73,11 +73,11 @@
         </div>
     </li>
 
-    <li class="nav-item px-2">
+    <!-- <li class="nav-item px-2">
         <a href="<?php echo site_url('our-products'); ?>" class="nav-link hover-link">
             Our Products
         </a>
-    </li>
+    </li> -->
 
     <li class="nav-item px-2">
         <a href="<?php echo site_url('about-us'); ?>" class="nav-link hover-link">
