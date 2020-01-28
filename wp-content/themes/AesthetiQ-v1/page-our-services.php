@@ -2,7 +2,7 @@
 
 <?php $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg'; ?>
 
-<div class="mt-5 pt-5"></div>
+<!-- <div class="mt-5 pt-5"></div> -->
 
 <section id="our-signature-treatments" class="py-5 mb-5">
     <h1 class="header p-5 mb-5">Our Services</h1>

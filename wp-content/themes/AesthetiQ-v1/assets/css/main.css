@@ -11133,8 +11133,10 @@ h1.header {
 .hover-link:hover::after {
   width: 100%; }
 
+div .no-hover-effect a:hover {
+  color: #c57350 !important; }
+
 .carousel {
-  margin-top: 10vh !important;
   background: #444; }
 
 .carousel-item .img-fluid {

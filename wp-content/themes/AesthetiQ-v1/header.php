@@ -67,7 +67,7 @@
 
 <body <?php body_class(); ?>>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-header" style="border-bottom: 1px solid #9C908A;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-header" style="border-bottom: 1px solid #9C908A;">
         <div class="container-fluid">
             <h1 class="pb-2 ml-md-0 ml-sm-3 ml-0 mr-3 pl-md-5">
                 <a href="<?php echo site_url(); ?>" class="navbar-brand">
