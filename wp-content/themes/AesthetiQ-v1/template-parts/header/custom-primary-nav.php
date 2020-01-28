@@ -26,18 +26,18 @@
     </li>
 
     <li class="nav-item px-2 dropdown menu-area">
-        <a href="<?php echo site_url('our-services'); ?>" class="nav-link dropdown-toggle d-md-block d-none" aria-haspopup="true" aria-expanded="false">
+        <a href="<?php echo site_url('our-services'); ?>" class="nav-link dropdown-toggle d-lg-block d-none" aria-haspopup="true" aria-expanded="false">
             Our Services
         </a>
 
-        <a href="#!" class="nav-link dropdown-toggle d-md-none d-inline" aria-haspopup="true" aria-expanded="false">
+        <a href="#!" class="nav-link dropdown-toggle d-lg-none d-inline" aria-haspopup="true" aria-expanded="false">
             Our Services
         </a>
 
-        <div class="no-hover-effect d-inline d-md-none ml-2">
+        <div class="no-hover-effect d-inline d-lg-none ml-2">
             <a href="<?php echo site_url('our-services'); ?>" class="text-gold-brown">| Go to page</a>
         </div>
-        <div class="dropdown-menu mega-area scrollable-menu mt-2 mt-md-0" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu mega-area scrollable-menu mt-2 mt-lg-0" aria-labelledby="navbarDropdownMenuLink">
             <div class="container">
                 <div class="row pt-4">
                     <?php foreach ($serviceCategory as $cat) { ?>
