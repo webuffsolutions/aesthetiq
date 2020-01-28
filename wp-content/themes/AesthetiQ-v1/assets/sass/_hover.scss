@@ -19,6 +19,8 @@ $gold-brown: #c57350;
   width: 100%;
 }
 
-div .no-hover-effect a:hover {
+div .no-hover-effect a:hover,
+div .no-hover-effect a:active {
   color: $gold-brown !important;
+  text-decoration: none !important;
 }
