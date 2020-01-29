@@ -37,9 +37,10 @@
         <div class="no-hover-effect d-inline d-lg-none ml-2">
             <a href="<?php echo site_url('our-services'); ?>" class="text-gold-brown">| Go to page</a>
         </div>
-        <div class="dropdown-menu mega-area scrollable-menu mt-2 mt-lg-0" aria-labelledby="navbarDropdownMenuLink">
+        
+        <div class="dropdown-menu mega-area scrollable-menu mt-md-n2 mt-2" aria-labelledby="navbarDropdownMenuLink">
             <div class="container">
-                <div class="row pt-4">
+                <div class="row pt-md-4 pt-0">
                     <?php foreach ($serviceCategory as $cat) { ?>
                         <div class="col-sm-6 col-lg-4 pb-4">
                             <h5 class="font-weight-bold"><?php echo $cat['name']; ?></h5>
