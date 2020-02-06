@@ -26,17 +26,19 @@
     </li>
 
     <li class="nav-item px-2 dropdown menu-area">
+        <!-- web -->
         <a href="<?php echo site_url('our-services'); ?>" class="nav-link dropdown-toggle d-lg-block d-none" aria-haspopup="true" aria-expanded="false">
             Our Services
         </a>
 
-        <a href="#!" class="nav-link dropdown-toggle d-lg-none d-inline" aria-haspopup="true" aria-expanded="false">
+        <!-- mobile -->
+        <a href="#!" class="nav-link dropdown-click dropdown-toggle d-lg-none d-inline" aria-haspopup="true" aria-expanded="false">
             Our Services
         </a>
 
-        <div class="no-hover-effect d-inline d-lg-none ml-2">
-            <a href="<?php echo site_url('our-services'); ?>" class="text-gold-brown">| Go to page</a>
-        </div>
+        <!-- <div class="no-hover-effect d-inline d-lg-none ml-2">
+            <a href="<php echo site_url('our-services'); ?>" class="text-gold-brown">| Go to page</a>
+        </div> -->
         
         <div class="dropdown-menu mega-area scrollable-menu mt-md-n2 mt-2" aria-labelledby="navbarDropdownMenuLink">
             <div class="container">
