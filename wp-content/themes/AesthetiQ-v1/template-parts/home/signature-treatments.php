@@ -1,18 +1,18 @@
-<?php 
-    $args = [
-        'post_type' => 'service',
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => [
-            [
-                'taxonomy' => 'service_category',
-                'field' => 'term_id',
-                'terms' => [13]
-            ]
+<?php
+$args = [
+    'post_type' => 'service',
+    'orderby' => 'menu_order',
+    'order' => 'ASC',
+    'tax_query' => [
+        [
+            'taxonomy' => 'service_category',
+            'field' => 'term_id',
+            'terms' => [13]
         ]
-    ];
+    ]
+];
 
-    $services = new WP_Query($args);
+$services = new WP_Query($args);
 ?>
 
 <section id="our-signature-treatments" class="py-5">
@@ -20,27 +20,28 @@
     <div class="container-fluid">
         <div class="row">
 
-            <?php 
-                while ($services->have_posts()) {
-                    $services->the_post();
-                    $index = $services->current_post;
+            <?php
+            while ($services->have_posts()) {
+                $services->the_post();
+                $index = $services->current_post;
             ?>
 
-            <div class="col-md-4 pb-4">
-                <div class="card text-white">
-                    <img class="card-img border-bottom-green" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), '1200x1200'); ?>" />
-                </div>
+                <div class="col-lg-4 col-6 pb-4">
+                    <div class="card text-white">
+                        <img class="card-img border-bottom-green" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), '1200x1200'); ?>" />
+                    </div>
 
-                <div class="d-flex">
-                    <div class="mx-auto mt-4">
-                        <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-outline-aq-brown pb-0">
-                            LEARN MORE
-                        </a>
+                    <div class="d-flex">
+                        <div class="mx-auto mt-4">
+                            <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-outline-aq-brown pb-0">
+                                LEARN MORE
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <?php } wp_reset_postdata(); ?>
+            <?php }
+            wp_reset_postdata(); ?>
         </div>
     </div>
 </section>
