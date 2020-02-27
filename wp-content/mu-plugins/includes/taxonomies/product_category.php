@@ -22,6 +22,13 @@ function createProductCategoryHierarchicalTaxonomy()
     ];
 
     $args = [
+        'capabilities' => array(
+            'manage_terms' => 'edit_products',
+            'edit_terms' => 'edit_products',
+            'delete_terms' => 'edit_products',
+            'assign_terms' => 'edit_products',
+        ),
+        'capability_type' => 'product_category',
         'hierarchical' => true,
         'labels' => $labels,
         'show_ui' => true,
