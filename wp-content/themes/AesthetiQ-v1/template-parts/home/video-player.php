@@ -5,7 +5,7 @@
     </svg>
 
     <div class="container">
-        <div class="row p-5 justify-content-between">
+        <div class="row pt-5 justify-content-between">
             <div class="col-md-6 pb-4 text-center">
                 <!-- <img src="https://picsum.photos/id/111/600/300" class="img-fluid" /> -->
                 <?php
@@ -19,16 +19,17 @@
                             <source src="' . get_field('video_file') . '" type="video/mp4">
                         </video>';
                     } else {
-                        echo '<video controls></video>';
+                        // echo '<video controls></video>';
+                        echo '<img src="'.site_url().'/wp-content/uploads/2019/11/home-4-700x300.jpg" class="img-fluid" />';
                     }
                 } else if ($videoType == 'URL') {
                     if ($youtubeUrl) {
                         echo '<iframe width="500" height="250" src="' . $youtubeUrl . '" style="border: 0; max-width: 100%;"></iframe>';
                     } else {
-                        echo '<video controls></video>';
+                        echo '<img src="'.site_url().'/wp-content/uploads/2019/11/home-4-700x300.jpg" class="img-fluid" />';
                     }
                 } else {
-                    echo '<video controls></video>';
+                    echo '<img src="'.site_url().'/wp-content/uploads/2019/11/home-4-700x300.jpg" class="img-fluid" />';
                 }
                 ?>
             </div>

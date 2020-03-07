@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="mt-5 pt-5"></div>
+<!-- <div class="mt-5 pt-5"></div> -->
 
 <?php 
 
@@ -36,13 +36,11 @@
 
     <div class="container-fluid">
         <div class="row px-md-5 px-0">
-            <div class="col-md-4 pb-4 pr-md-5 sticky">
+            <div class="col-md-4 pb-4 sticky">
                 <?php get_template_part('template-parts/our-services/left-navigation'); ?>
             </div>
 
-            <div class="col-md-1"></div>
-
-            <div class="col-md-7">
+            <div class="col-md-8 offset-md-2">
                 <div id="services-content"></div>
                 <div id="single-service-content">
                     <div class="card border-0 mb-5">
@@ -99,7 +97,7 @@
 
                     <!-- other services -->
                     <div class="row">
-                        <div class="px-2 pt-5 pb-2 font-weight-bold">
+                        <div class="pl-3 pr-2 pt-5 pb-2 font-weight-bold">
                             <h3>OTHER SERVICES</h3>
                         </div>
                     </div>

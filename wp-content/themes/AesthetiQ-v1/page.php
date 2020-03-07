@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="mt-5 pt-5"></div>
+<!-- <div class="mt-5 pt-5"></div> -->
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

@@ -4,7 +4,7 @@
     $logo = get_template_directory_uri() . '/assets/images/logo/login-logo.jpg';
 ?>
 
-<div class="mt-5 pt-5"></div>
+<!-- <div class="mt-5 pt-5"></div> -->
 
 <!-- about us -->
 <section id="about-us" class="pt-5">

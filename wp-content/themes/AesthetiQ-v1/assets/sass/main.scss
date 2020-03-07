@@ -1,9 +1,9 @@
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/hover.css/scss/hover.scss";
 
 @import "./fonts";
 @import "./hover";
-@import "./utilities";
 @import "./carousel";
 @import "./page-headers";
 
@@ -11,3 +11,5 @@
 @import "./pages/products-services/styles";
 
 @import "./banner";
+
+@import "./utilities";

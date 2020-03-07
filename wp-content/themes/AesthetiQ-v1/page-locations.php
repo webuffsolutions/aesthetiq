@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="mt-5 pt-5"></div>
+<!-- <div class="mt-5 pt-5"></div> -->
 
 <section id="locations" class="pt-5">
     <h1 class="header p-5">Locations</h1>

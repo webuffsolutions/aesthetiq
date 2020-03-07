@@ -22,6 +22,14 @@ function createServiceCategoryHierarchicalTaxonomy()
     ];
 
     $args = [
+        'capabilities' => array(
+            'manage_terms' => 'edit_services',
+            'edit_terms' => 'edit_services',
+            'delete_terms' => 'edit_services',
+            'assign_terms' => 'edit_services',
+        ),
+        'capability_type' => 'service_category',
+        'map_meta_cap' => true,
         'hierarchical' => true,
         'labels' => $labels,
         'show_ui' => true,
