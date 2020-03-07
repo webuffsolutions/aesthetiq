@@ -26,7 +26,7 @@ $services = new WP_Query($args);
                 $index = $services->current_post;
             ?>
 
-                <div class="col-lg-4 col-6 pb-4">
+                <div class="col-lg-4 col-12 pb-4">
                     <div class="card text-white">
                         <img class="card-img border-bottom-green" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), '1200x1200'); ?>" />
                     </div>
