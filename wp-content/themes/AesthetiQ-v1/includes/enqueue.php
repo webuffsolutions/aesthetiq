@@ -14,8 +14,10 @@ function mainStyles()
     wp_enqueue_style('fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
     wp_enqueue_style('custom-fonts', get_theme_file_uri('/assets/fonts/stylesheet.css'));
     wp_enqueue_style('air-datepicker', get_theme_file_uri('/assets/air-datepicker-master/dist/css/datepicker.min.css'));
-    wp_enqueue_style('sweetalert', get_theme_file_uri('/node_modules/sweetalert2/dist/sweetalert2.min.css'));
-    wp_enqueue_style('lightbox', get_theme_file_uri('/node_modules/lightbox2/dist/css/lightbox.min.css'));
+    // wp_enqueue_style('sweetalert', get_theme_file_uri('/node_modules/sweetalert2/dist/sweetalert2.min.css'));
+    // wp_enqueue_style('lightbox', get_theme_file_uri('/node_modules/lightbox2/dist/css/lightbox.min.css'));
+    wp_enqueue_style('sweetalert', '//cdn.jsdelivr.net/npm/sweetalert2@9.10.0/dist/sweetalert2.min.css');
+    wp_enqueue_style('lightbox', '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css');
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('main', get_theme_file_uri('/assets/js/main.js'), NULL, '1.0', true);
@@ -26,8 +28,11 @@ function mainStyles()
     wp_enqueue_script('airDatePickerJS', get_theme_file_uri('/assets/air-datepicker-master/dist/js/datepicker.min.js', NULL, '1.0', true));
     wp_enqueue_script('airDatePickerEnglishJS', get_theme_file_uri('/assets/air-datepicker-master/dist/js/i18n/datepicker.en.js', NULL, '1.0', true));
     wp_enqueue_script('datepicker-init', get_theme_file_uri('/assets/js/datepicker-init.js'), NULL, '1.0', true);
-    wp_enqueue_script('sweetalert', get_theme_file_uri('/node_modules/sweetalert2/dist/sweetalert2.all.min.js'), NULL, '1.0', true);
-    wp_enqueue_script('lighbox', get_theme_file_uri('/node_modules/lightbox2/dist/js/lightbox.min.js'), NULL, '1.0', true);
+    // wp_enqueue_script('sweetalert', get_theme_file_uri('/node_modules/sweetalert2/dist/sweetalert2.all.min.js'), NULL, '1.0', true);
+    // wp_enqueue_script('lighbox', get_theme_file_uri('/node_modules/lightbox2/dist/js/lightbox.min.js'), NULL, '1.0', true);
+
+    wp_enqueue_script('sweetalert', '//cdn.jsdelivr.net/npm/sweetalert2@9.10.0/dist/sweetalert2.all.min.js', NULL, '1.0', true);
+    wp_enqueue_script('lightbox', '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js', NULL, '1.0', true);
     wp_enqueue_script('our-services', get_theme_file_uri('/assets/js/our-services.js'), NULL, microtime(), true);
     wp_enqueue_script('our-products', get_theme_file_uri('/assets/js/our-products.js'), NULL, microtime(), true);
     wp_enqueue_script('init', get_theme_file_uri('/assets/js/init.js'), NULL, microtime(), true);
